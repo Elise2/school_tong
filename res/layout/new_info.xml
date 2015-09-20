@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/searchData"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff" >
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/editName"
+            android:gravity="center_vertical"
+            android:src="@drawable/skin_searchbar_icon" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:inputType="text"
+            android:ems="10"
+            android:hint="请输入姓名" >
+        </EditText>
+    </RelativeLayout>
+    <ListView 
+        android:id="@+id/editLst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchData"
+        android:scrollbars="none"
+        ></ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffff" >
+
+        <EditText
+            android:id="@+id/inContent"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:background="@drawable/info_edit_bg_" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#3BABFF"
+            android:text="发送"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+</RelativeLayout>
